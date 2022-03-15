@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
     <link
       rel="icon"
       type="image/png"
@@ -22,6 +27,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        
       }
       .attribution {
         font-size: 11px;
@@ -34,15 +40,55 @@
         background-color: #674BB1;
         height: 100vh;
         width: 100%;
-        background-image: url('./images/bg-desktop.svg');
-        background: size 100% 100vh;
+        background-image: url('./images/bg-desktop.svg');       
         background-position: left center ; 
         background-repeat: no-repeat;
-       
-        
+      }
+      #logo {
+        width: 15%;
+        position: sticky;
       }
       header {
-        padding: 5%;
+        padding-left: 5%;
+        padding-top: 3%;
+        padding-bottom: 4%;
+      }
+      #container {
+        
+        display: grid;
+        grid-gap: 5%;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1.1fr 1fr;
+        position:static;
+        
+      }
+      .illustrator {
+        padding-left: 10%;
+      }
+      
+      #main_tittle {
+        padding-top: 8%;
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+        font-family: 'Open Sans', sans-serif;
+      }
+      #parragraph {
+        padding-top: 4%;
+        color: white;
+        font-size: 120%;
+        padding-bottom: 3%;
+        font-family: 'Open Sans', sans-serif;
+      }
+      #button1 {
+        font-size: 15px;
+        padding: 0.5em;
+        height: 50px;
+        width: 225px;
+        color: #674BB1;
+        border-radius: 1.5rem;
+        border: none;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
       }
       nav {
         padding-right: 5%;
@@ -55,14 +101,16 @@
   </head>
   <body class="hero">
     <header>
-      <img src="./images/logo.svg" alt="">
+      <img id="logo" src="./images/logo.svg" alt="">
     </header>
-      <div>
-        <img class="illustrator" src="" alt="">
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections
-        with your users as you engage in genuine discussion.</p>
-        <button>Register</button> 
+      <div id="container">
+        <img class="illustrator" src="./images/illustration-mockups.svg" alt="">
+          <div id="text">
+            <h1 id="main_tittle">Build The Community<br> Your Fans Will Love</h1>
+            <p id="parragraph">Huddle re-imagines the way we build communities. You have <br>a voice, but so does your audience. Create connections
+            with<br> your users as you engage in genuine discussion.</p>
+            <button id="button1">Register</button> 
+          </div>
       </div>
     <nav>
       <li class="fb">a</li>
